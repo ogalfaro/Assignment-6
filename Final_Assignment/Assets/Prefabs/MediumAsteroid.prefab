@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 458388173265765417}
   - component: {fileID: 5849077199340314511}
   - component: {fileID: 8488133670751508515}
+  - component: {fileID: 744802485066626245}
   m_Layer: 0
   m_Name: MediumAsteroid
   m_TagString: Untagged
@@ -103,7 +104,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3833208449659336653}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ff5d3d93d150267449d509790589f7e9, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -119,5 +120,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a57648f996346134e8e7e8b04244cb54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &744802485066626245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833208449659336653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939003d90b270e44a8af8ab0c11fd572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
