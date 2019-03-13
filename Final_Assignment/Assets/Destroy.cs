@@ -12,7 +12,7 @@ public class Destroy : MonoBehaviour
         /// <param name="other">The Collision data associated with this collision.</param>
         private void OnCollisionEnter(Collision other)
         {
-            if(other.gameObject.name == "Player" || other.gameObject.name == "Cube"){
+            if(other.gameObject.tag == "Cube" || other.gameObject.name == "Catch"){
                 Destroy(this.gameObject); 
             }
         }
