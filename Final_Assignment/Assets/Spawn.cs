@@ -15,7 +15,7 @@ public class Spawn : MonoBehaviour
         time = Random.value;
         Rigidbody RigidPrefab;
         //RigidPrefab = Instantiate(Prefab,Spawnpoint.position,Spawnpoint.rotation)as Rigidbody;
-        RigidPrefab = Instantiate(Prefab, new Vector3(Random.Range(-11f,3f),Random.Range(10f,13f),1f), Quaternion.identity)as Rigidbody;
+        RigidPrefab = Instantiate(Prefab, new Vector3(Random.Range(-6f,1f),Random.Range(10f,13f),1f), Quaternion.identity)as Rigidbody;
 
     }
 }

@@ -15,7 +15,7 @@ void FixedUpdate() {
         this.transform.position = new Vector3(-6.76f,4.02f,1.46f);//destination.position;
     } 
     else if(Input.GetKey(KeyCode.C)) {
-        this.transform.position = new Vector3(-.87f,4.02f,.51f);//destination.position;
+        this.transform.position = new Vector3(-1.356951f,4.330102f,2.820631f);//destination.position;
     }   
 }
 
