@@ -121,3 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57648f996346134e8e7e8b04244cb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloatingText: {fileID: 6426137637637780377, guid: 532aedca03d446c4386bbbefaacf4585,
+    type: 3}
+  Asteroid: 50

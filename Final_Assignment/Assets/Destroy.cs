@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
+    public GameObject FloatingText;
+    public float Asteroid = 50f;
   
         /// <summary>
         /// OnCollisionEnter is called when this collider/rigidbody has begun
@@ -15,6 +17,16 @@ public class Destroy : MonoBehaviour
             if(other.gameObject.tag == "Cube" || other.gameObject.name == "Catch" || other.gameObject.name == "MediumAsteroid(Clone)" || other.gameObject.name == "Player"){
                 Destroy(this.gameObject); 
             }
+            if(other.gameObject.name == "RightFlipper" || other.gameObject.name == "LeftFlipper"){
+                if(FloatingText){
+                    ShowFloatingText();
+                }  
+            }
+        }
+
+        void ShowFloatingText(){
+            var go = Instantiate(FloatingText,transform.position,transform.rotation);
+            go.GetComponent<TextMesh>().text = Asteroid.ToString(); 
         }
         
     
