@@ -225,6 +225,8 @@ GameObject:
   - component: {fileID: 555715878}
   - component: {fileID: 555715877}
   - component: {fileID: 555715876}
+  - component: {fileID: 555715881}
+  - component: {fileID: 555715880}
   m_Layer: 0
   m_Name: Catch
   m_TagString: Untagged
@@ -304,6 +306,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &555715880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555715875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898cdfa2f6600834fa09e10a7fe57aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 458388173265765417, guid: 1f5dd27cd35bf96449485050ab3c55cd, type: 3}
+  time: 2
+--- !u!114 &555715881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555715875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898cdfa2f6600834fa09e10a7fe57aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 6347798858535274796, guid: 63a5cb761f264ee4195f2e1efed721b0, type: 3}
+  time: 2
 --- !u!1 &906133550
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898cdfa2f6600834fa09e10a7fe57aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spawnpoint: {fileID: 1994232274}
   Prefab: {fileID: 458388173265765417, guid: 1f5dd27cd35bf96449485050ab3c55cd, type: 3}
   time: 3
 --- !u!1 &1164207579
@@ -1246,7 +1275,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1540860804, guid: 599ba008a85013b4db6ec0195d4e3ade, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 599ba008a85013b4db6ec0195d4e3ade, type: 3}
 --- !u!1 &1478409855
 GameObject:
@@ -1989,7 +2019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898cdfa2f6600834fa09e10a7fe57aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spawnpoint: {fileID: 1686495444}
   Prefab: {fileID: 458388173265765417, guid: 1f5dd27cd35bf96449485050ab3c55cd, type: 3}
   time: 3
 --- !u!1001 &1864988407

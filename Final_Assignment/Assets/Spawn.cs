@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    public Transform Spawnpoint;
+    //public Transform Spawnpoint;
     public Rigidbody Prefab;
-    public float time = 3f;
+    public float time = 2f;
 
     void Start(){
         InvokeRepeating("SpawnAsteroid",time, time);

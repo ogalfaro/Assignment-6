@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class GreenDestroy : MonoBehaviour
 {
     public GameObject FloatingText;
     public float Fifty = 50f;
@@ -19,7 +19,7 @@ public class Destroy : MonoBehaviour
             if(other.gameObject.tag == "Cube" || other.gameObject.name == "Catch"){
                 Destroy(this.gameObject); 
             }
-            if(other.gameObject.name == "MediumAsteroid(Clone)"){
+            if(other.gameObject.name == "GreenAsteroid(Clone)"){
                 if(FloatingText){
                     ShowFloatingText(TwoHundred);  
                 }
