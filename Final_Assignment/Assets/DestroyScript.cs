@@ -1,13 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Destroy : MonoBehaviour
+public class DestroyScript : MonoBehaviour
 {
     public GameObject FloatingText;
     public float Fifty = 50f;
     public float Hundred = 100f;
     public float TwoHundred = 200f;
+    public static float Life = 3f;
+
+    void Update(){
+        if(Life == 0f){
+           SceneManager.LoadScene("Start"); 
+        }
+    }
   
         /// <summary>
         /// OnCollisionEnter is called when this collider/rigidbody has begun
@@ -23,18 +32,26 @@ public class Destroy : MonoBehaviour
                 if(FloatingText){
                     ShowFloatingText(TwoHundred);  
                 }
+                Score.scoreValue += 200f;
                 Destroy(this.gameObject);
             }
             if(other.gameObject.name == "Player"){
                 if(FloatingText){
                     ShowFloatingText(Hundred);  
                 }
+                Score.scoreValue += 100f;
                 Destroy(this.gameObject);
             }
             if(other.gameObject.name == "RightFlipper" || other.gameObject.name == "LeftFlipper"){
                 if(FloatingText){
                     ShowFloatingText(Fifty);
-                }  
+                }
+                Score.scoreValue += 50f;  
+            }
+            if(other.gameObject.name == "Button1" || other.gameObject.name == "Button2"){
+                if(Life > 0){
+                    Life --;
+                } 
             }
         }
 

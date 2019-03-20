@@ -80,7 +80,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6426137637637780377}
-  m_Text: 'Some Text '
+  m_Text: 'Score: 4600'
   m_OffsetZ: 0
   m_CharacterSize: 0.03
   m_LineSpacing: 1
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyTime: 1
+  RandomizeIntensity: {x: 0.5, y: 0, z: 0}
 --- !u!111 &5953992198775120536
 Animation:
   m_ObjectHideFlags: 0

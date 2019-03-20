@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GreenDestroy : MonoBehaviour
 {
     public GameObject FloatingText;
@@ -23,18 +24,26 @@ public class GreenDestroy : MonoBehaviour
                 if(FloatingText){
                     ShowFloatingText(TwoHundred);  
                 }
+                Score.scoreValue += 200f;
                 Destroy(this.gameObject);
             }
             if(other.gameObject.name == "Player"){
                 if(FloatingText){
                     ShowFloatingText(Hundred);  
                 }
+                Score.scoreValue += 100f;
                 Destroy(this.gameObject);
             }
             if(other.gameObject.name == "RightFlipper" || other.gameObject.name == "LeftFlipper"){
                 if(FloatingText){
                     ShowFloatingText(Fifty);
-                }  
+                } 
+                Score.scoreValue += 50f; 
+            }
+            if(other.gameObject.name == "Button1" || other.gameObject.name == "Button2"){
+                if(DestroyScript.Life > 0f){
+                    DestroyScript.Life --;
+                } 
             }
         }
 

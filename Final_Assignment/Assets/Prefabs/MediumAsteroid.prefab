@@ -123,4 +123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FloatingText: {fileID: 6426137637637780377, guid: 532aedca03d446c4386bbbefaacf4585,
     type: 3}
-  Asteroid: 50
+  Score: {fileID: 1130075799523931963, guid: 84314b42260becc4681e5b240e53934a, type: 3}
+  Fifty: 50
+  Hundred: 100
+  TwoHundred: 200
+  scoreValue: 0
