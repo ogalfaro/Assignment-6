@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GreenDestroy : MonoBehaviour
 {
+    public GameObject Explosion;
     public GameObject FloatingText;
     public float Fifty = 50f;
     public float Hundred = 100f;
@@ -48,6 +49,7 @@ public class GreenDestroy : MonoBehaviour
         }
 
         void ShowFloatingText(float x){
+            Instantiate(Explosion,transform.position,Quaternion.identity);
             var go = Instantiate(FloatingText,transform.position,Quaternion.identity);
             go.GetComponent<TextMesh>().text = x.ToString(); 
         }

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3797357499131957456}
   - component: {fileID: 7429413857797532760}
   - component: {fileID: 6347798858535274796}
-  - component: {fileID: 3975961547968174439}
   - component: {fileID: 8064482733408958662}
+  - component: {fileID: 1070289689400166468}
   m_Layer: 0
   m_Name: GreenAsteroid
   m_TagString: Untagged
@@ -96,19 +96,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3975961547968174439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4835869730603535845}
-  m_Material: {fileID: 13400000, guid: ff5d3d93d150267449d509790589f7e9, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.046858747, y: 0.05820389, z: 0.059154812}
-  m_Center: {x: 0.0016100303, y: -0.0009720605, z: -0.0002999371}
 --- !u!114 &8064482733408958662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,8 +108,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f69fa3000f5a724daab6ac8ebfa66fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 3629885660354399919, guid: 1b7f9087fe3e7144499496ac14161569,
+    type: 3}
   FloatingText: {fileID: 6426137637637780377, guid: 532aedca03d446c4386bbbefaacf4585,
     type: 3}
   Fifty: 50
   Hundred: 100
   TwoHundred: 200
+--- !u!136 &1070289689400166468
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4835869730603535845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 0.05820389
+  m_Direction: 1
+  m_Center: {x: 0.0016100303, y: -0.00097206794, z: -0.0003000265}

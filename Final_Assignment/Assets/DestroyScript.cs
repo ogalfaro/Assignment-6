@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 public class DestroyScript : MonoBehaviour
 {
     public GameObject FloatingText;
+    public GameObject Explosion;
     public float Fifty = 50f;
     public float Hundred = 100f;
     public float TwoHundred = 200f;
-    public static float Life = 3f;
+    public static int Life = 3;
 
     void Update(){
-        if(Life == 0f){
+        if(Life <= 0){
            SceneManager.LoadScene("Start"); 
         }
     }
@@ -49,13 +50,14 @@ public class DestroyScript : MonoBehaviour
                 Score.scoreValue += 50f;  
             }
             if(other.gameObject.name == "Button1" || other.gameObject.name == "Button2"){
-                if(Life > 0){
+                if(Life >= 0){
                     Life --;
                 } 
             }
         }
 
         void ShowFloatingText(float x){
+            Instantiate(Explosion,transform.position,Quaternion.identity);
             var go = Instantiate(FloatingText,transform.position,Quaternion.identity);
             go.GetComponent<TextMesh>().text = x.ToString(); 
         }

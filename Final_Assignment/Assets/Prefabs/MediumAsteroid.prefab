@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4858237074554862942}
   - component: {fileID: 1538932344078336029}
   - component: {fileID: 458388173265765417}
-  - component: {fileID: 5849077199340314511}
   - component: {fileID: 8488133670751508515}
+  - component: {fileID: 8621356775208662577}
   m_Layer: 0
   m_Name: MediumAsteroid
   m_TagString: Untagged
@@ -96,19 +96,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5849077199340314511
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3833208449659336653}
-  m_Material: {fileID: 13400000, guid: ff5d3d93d150267449d509790589f7e9, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.046858747, y: 0.05820389, z: 0.059154812}
-  m_Center: {x: 0.0016100303, y: -0.0009720605, z: -0.0002999371}
 --- !u!114 &8488133670751508515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,8 +110,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FloatingText: {fileID: 6426137637637780377, guid: 532aedca03d446c4386bbbefaacf4585,
     type: 3}
-  Score: {fileID: 1130075799523931963, guid: 84314b42260becc4681e5b240e53934a, type: 3}
+  Explosion: {fileID: 3629885660354399919, guid: 1b7f9087fe3e7144499496ac14161569,
+    type: 3}
   Fifty: 50
   Hundred: 100
   TwoHundred: 200
-  scoreValue: 0
+--- !u!136 &8621356775208662577
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833208449659336653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 0.05820389
+  m_Direction: 1
+  m_Center: {x: 0.0016100303, y: -0.0009720605, z: -0.0002999371}
